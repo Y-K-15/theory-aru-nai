@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>この説あるorない</title>
+</head>
+<script src="./js/theory.js"></script>
+<body>
+  <div>
+    <header>
+      <h1>この説あるorない</h1>
+    </header>
+    <main>
+      <div>
+        <p>
+          「この説あるorない」は「〇〇説ある説ない説ある説ない説ある。」というクソみたいな文章が「〇〇」ということが本当に行われるのか行われないのかを判定してくれるクソツールです。<br>
+          ※このツールでは例文中では「〇〇」となっている部分の後に含まれる「ない」の数によって判定しています。そのため、実際は「ある」の強調表現である「しかない」には対応しておりません。複数文章がある場合にも対応しておりません。
+        </p>
+      </div>
+      <div>
+          <textarea name="" id="input" cols="30" rows="5" placeholder="例：〇〇説ある説ない説ない。"></textarea>
+        </div>
+        <input type="button" onclick="judge()" value="判定">
+      </div>
+      <div class="result">
+        <div id="showInput">
+        </div>
+        <div>
+          <p>＜結果＞</p>
+          <p id="doOr"> </p>
+        </div>
+      </div>
+      <div>
+        このツールは<a href="「◯◯説ある」等の日本語表現に関する藤田・小幡予想.pdf">こちら</a>を参考にさせていただいております。
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
+
+</body>
+</html>
