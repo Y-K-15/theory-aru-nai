@@ -25,7 +25,7 @@ function judge(){
   if(count % 2 === 0  ){
     result = '実行される'
   }else{
-    result = '実行される'
+    result = '実行されない'
   };
 
   console.log(result);
